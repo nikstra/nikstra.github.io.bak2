@@ -1,18 +1,9 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Niklas Strand. I'm a .NET developer and a general tech geek. I often find myself trying to remember where I've found a solution to a problem that I had earlier and spending a lot of time finding the solution again. I've created this site to be able to write down these solutions and have them all in one place.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I'll mainly write about programming and various computer related issues but I'm not limiting myself to those subjects. The future will tell.

@@ -13,22 +13,30 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: nikstra's notes
+email: nikstra@yahoo.com
+page.list_title: Notes
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Here are my notes and solutions to various programming
+  and tech issues I've encountered. I'm a .NET developer
+  with a previous carrier as a sysadmin.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+#twitter_username: jekyllrb
+github_username:  nikstra
+timezone: Europe/Stockholm
+header_pages:
+  - about.md
 
 # Build settings
 markdown: kramdown
 theme: minima
+plugins_dir:
+  - jekyll-paginate-v2
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
+  - rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +49,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Pagination
+#paginate: 5
+#paginate_path: "/blog/page:num/"
+
+# Syntax Highlighting
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+minima:
+  date_format: "%Y-%m-%d"
+
+# Produces a cleaner folder structure when using categories
+permalink: /:year/:month/:title.html
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+

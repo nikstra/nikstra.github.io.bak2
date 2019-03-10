@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+a.site-title::first-letter,
+h2.footer-heading::first-letter {
+  color: red;
+}
+
+a.page-link {
+  display: inline-block;
+}
+
+a.page-link::first-letter {
+  color: red;
+}
